@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #313131;
+}
+
+.heading-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    font-family: 'Rowdies', cursive;
+}
+
+.todo-list-box{
+    display: grid;
+}
+
+.inputList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#inputBox{
+    margin-right: 10px;
+    background-color: #313131;
+    color: white;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1.5px solid white;
+}
+
+#inputBox:focus{
+    border: 2px solid #a1d4fc;
+    outline: none;
+}
+
+#inputBox::placeholder{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#addBtn{
+    background-color: #009306;
+    color: white;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1.5px solid white;
+}
+
+#addBtn:hover{
+    background-color: #32b537;
+}
+
+.parent-list{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-box{
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 15px;    
+    margin-top: 15px;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.checkBox[type='checkbox'] {
+    accent-color: #32b537;
+}
+
+.inputTaskBox{
+    color: white;
+    outline: none;
+    border: 0px solid red;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.editBtn{
+    outline: none;
+    color: white;
+    background-color: #32b537;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    padding: 2px 10px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.delBtn{
+    outline: none;
+    color: white;
+    background-color: red;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    padding: 2px 10px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+}
